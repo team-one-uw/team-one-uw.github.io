@@ -55,7 +55,7 @@
                   <li class="dropdown"><a href="solutions.html"><span>Solutions</span><i class="bi bi-chevron-right"></i></a>
                     <ul>
                       <li><a href="solutions.html#portfolio-details">Engineering</a></li>
-                      <li><a href="#">Data Science</a></li>
+                      <li><a href="solutions.html#portfolio-details-ds">Data Science</a></li>
                     </ul>
                   </li>
                   <li class="dropdown"><a href="results.html"><span>Results</span><i class="bi bi-chevron-right"></i></a>
@@ -99,16 +99,14 @@
     <!-- ======= Architecture Section ======= -->
     <section id="architecture">
       <div class="container" data-aos="fade-up">
-
         <header class="section-header">
           <h3>Architecture</h3>
-          <p>First, Let's take a look at the overall design we developed for the system! <br/> When implementing, our designed system can be further divided into <br /> engineering solution and data science solution. </p>
+          <p>First, Let's take a look at the overall design we developed for the system! <br/> When implementing, our designed system can be further divided into engineering solution and data science solution. </p>
         </header>
 
         <div class="facts-img">
           <img src="assets/img/architecture.png" alt="" class="img-fluid">
         </div>
-
       </div>
     </section><!-- End Architecture Section -->
 
@@ -121,25 +119,21 @@
         </header>
 
         <div class="row gy-4">
-
-          <div class="col-lg-7">
+          <div class="col-lg-7" style="margin-top: 5px;">
             <div class="portfolio-details-slider swiper-container">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-1.png" alt="">
+                  <img src="assets/img/portfolio/engineering-details-1.png" alt="">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-2.png" alt="">
+                  <img src="assets/img/portfolio/engineering-details-2.png" alt="">
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
-          <div class="col-lg-5">
+          <div class="col-lg-5" style="margin-top: 5px;">
             <div class="portfolio-info">
               <h3>System Components:</h3>
               <ul>
@@ -150,11 +144,49 @@
               </ul>
             </div>
           </div>
-
         </div>
 
       </div>
     </section><!-- End Engineering Section -->
+
+    <!-- ======= Data Science Section ======= -->
+    <section id="portfolio-details-ds" class="portfolio-details">
+      <div class="container">
+        <header class="section-header wow fadeInUp">
+          <h3>Data Science Solution</h3>
+          <p>Now that we have the results from the engineering solution, we can feed the results into the data analysis flow. <br />There are three parts in our data analysis flow. We used the python script to process data, integrated Python to Power BI and <br />then provide the informative dashboard to support the Xbox team’s decision making. More details are in the below flow chart.</p>
+        </header>
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-9" style="margin-top: 5px;">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ds-detail-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/ds-detail-2.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        
+          <div class="portfolio-info">
+            <h3>Metrics Details:</h3>
+            <ul>
+              <li><strong>Next, what kind of metrics did we use? </strong>Our goal is to find the optimal threshold for evaluation and then evaluate the performance of technologies by different styles of images, so we classified the output from our algorithm, and compared the performance in diverse thresholds. 
+              <li><strong>For the first goal,</strong> we built a confusion matrix in each threshold. The metrics we designed here include several threshold metrics, such as precision, recall and F1 score. </li>
+              <li><strong>For algorithm comparison,</strong> we tried to give the overview performance comparison, like the ROC curve and computational metrics. We also explored more details in each technology, so we used some slicers to see the differences of threshold metrics in diverse traits. For example, do the results from style A perform better than results from style B when we use technology A? Based on the results from these evaluation metrics, we provided the Power Bi dashboard and gave the Xbox team clear suggestions.</li>
+            </ul>
+          </div>
+        
+
+      </div>
+    </section><!-- End Data Science Section -->
 
   </main><!-- End #main -->
 
