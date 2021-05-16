@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Welcome to Our Capstone Project!</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: BizPage - v5.2.0
+  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container-fluid">
+
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo"><a href="index.html">TeamOne</a></h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+              <li class="dropdown"><a href="index.html#about"><span>Our Work</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="solutions.html"><span>Solutions</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="solutions.html#portfolio-details">Engineering</a></li>
+                      <li><a href="#">Data Science</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a href="results.html"><span>Results</span><i class="bi bi-chevron-right"></i></a>
+                    <ul>
+                      <li><a href="results.html#skills">System</a></li>
+                      <li><a href="results.html#portfolio-details">Dashboard</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="benefits.html">Benefits & Future Work</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
+              
+              <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Solutions: Engineering + Data Science</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Solutions</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs Section -->
+
+    <!-- ======= Architecture Section ======= -->
+    <section id="architecture">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h3>Architecture</h3>
+          <p>First, Let's take a look at the overall design we developed for the system! <br/> When implementing, our designed system can be further divided into <br /> engineering solution and data science solution. </p>
+        </header>
+
+        <div class="facts-img">
+          <img src="assets/img/architecture.png" alt="" class="img-fluid">
+        </div>
+
+      </div>
+    </section><!-- End Architecture Section -->
+
+    <!-- ======= Engineering Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <header class="section-header wow fadeInUp">
+          <h3>Engineering Solution</h3>
+          <p>The software engineering solution is the very first part of our designed system! Basically, we built up a system that can generate <br />the distance score based on the image datasets we are given and the target algorithm we want to test with. <br />The score produced will then be used by the data science solution, which we will introduce later :)</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/portfolio-details-2.png" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="portfolio-info">
+              <h3>System Components:</h3>
+              <ul>
+                <li><strong>Dataset Generator</strong>: This is where everything starts! The system takes in given images and transforms them to test images of different styles, such as rotate, adding border, etc.</li>
+                <li><strong>Hash Testing</strong>: The hash testing tool will then compare between the original images (base images) and the transformed images (test images), and generate results for the further analysis in the data science solution.</li>
+                <li><strong>Configuration Automation(Local)</strong>: When we were analysing the first algorithm (Tech A), we first built up the system and tested it locally. To raise the efficiency, we developed configuration apps that can automate a lot of work in the system.</li>
+                <li><strong>Azure Function Pipeline(Cloud)</strong>: We also built up Azure functions to implement the system on cloud to meet the sponsor’s needs. We send out a Post request to trigger the system; the system then takes the source information from the database, process the original data, and put the results in Azure blob.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Engineering Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>TeamOne</h3>
+            <p>This website serves as a presentation of the team's work for the capstone project in the Master of Science in Information Management(MSIM) program at the Information School of the University of Washington.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#hero">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">Our Work</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.html#team">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <table>
+              <tr><td colspan="3">1851 NE Grant Ln, Seattle, WA 98105, United States</td></tr>
+              <tr><td colspan="3">&nbsp;</td></tr>
+              <tr><td><strong>Phone:</strong></td><td colspan="2">+1 206 685 9937</td></tr>
+              <tr><td rowspan="2" style="vertical-align: top;"><strong>Email:</strong></td><td>whuan@uw.edu</td><td>ljchen17@uw.edu</td></tr>
+              <tr><td>chiaoya@uw.edu</td><td>yz25888@uw.edu</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>TeamOne</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Designed by <a>TeamOne</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
